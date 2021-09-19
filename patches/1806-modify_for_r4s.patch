@@ -50,17 +50,3 @@ index 067aad2763..b221186ba4 100644
  	option sfe_ipv6 '0'
  	option bbr_cca '1'
  	option fullcone_nat '1'
-diff --git a/package/lean/luci-app-cpufreq/root/etc/config/cpufreq b/package/lean/luci-app-cpufreq/root/etc/config/cpufreq
-index 5c2c070e9d..e1ce69b52e 100644
---- a/package/lean/luci-app-cpufreq/root/etc/config/cpufreq
-+++ b/package/lean/luci-app-cpufreq/root/etc/config/cpufreq
-@@ -1,3 +1,9 @@
- 
- config settings 'cpufreq'
-+	option governor0 'schedutil'
-+	option maxfreq0 '1608000'
-+	option governor4 'schedutil'
-+	option maxfreq4 '2016000'
-+	option minfreq0 '600000'
-+	option minfreq4 '600000'
- 
